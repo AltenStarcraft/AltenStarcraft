@@ -1,15 +1,14 @@
 # AltenStarcraft
 
-# Installation 
+## Installation 
 
-1)
-The PySc2InstallPackage contains the installer, you should be able to just run the install script and this will
+The PySc2InstallPackage contains an install script (InstallPySc2.cmd), execute this script and follow the inscrutions.
+The script will: 
  - Install Python
  - Install PySc2
  - Install Starcraft2
 
-2)
-Then you should copy the folder "Agents" to
+After the script finished copy the folder "Agents" to
 C:%homepath%\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\pysc2
 
 When you did 1 and 2 you can start the move to beacon with you agent by running StartPySc2.cmd.
@@ -17,7 +16,7 @@ If you still encounter problems, please leave a comment.
 
 
 
-# Creating your own agent
+## Creating your own agent
 
 The StartPySc2.cmd will basically set some variables to make it possible to start PySc2 and then start PySc2 by:
 %python% -m pysc2.bin.agent --map MoveToBeacon --agent pysc2.agents.PySc2Agent.MoveToBeaconAgent
@@ -40,7 +39,8 @@ Thus when working on you own SC2 agent you should be working in the C:%homepath%
 
 
 
-# Future plans
+## Future plans
 
 More minigames with different AI techniques will follow! 
 We are also thinking of creating some kind of competition. 
+

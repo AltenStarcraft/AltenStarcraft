@@ -11,8 +11,7 @@ The script will:
 After the script finished copy the folder "Agents" to
 C:%homepath%\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\pysc2
 
-When you did 1 and 2 you can start the move to beacon with you agent by running StartPySc2.cmd.
-If you still encounter problems, please leave a comment. 
+When you did this you can check if everything is installed successfully by running StartPySc2.cmd.
 
 
 
@@ -43,4 +42,8 @@ Thus when working on you own SC2 agent you should be working in the C:%homepath%
 
 More minigames with different AI techniques will follow! 
 We are also thinking of creating some kind of competition. 
+
+
+## More info on PySc2
+https://github.com/deepmind/pysc2
 

@@ -1,4 +1,4 @@
-# AltenStarcraft
+# Alten - PySc2 minigames 
 
 ## Installation 
 

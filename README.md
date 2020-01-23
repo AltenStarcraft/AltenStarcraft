@@ -1,9 +1,9 @@
-# Alten - PySc2 minigames 
+# Alten - PySc2 minigames
 
-## Installation 
+## Installation on Windows
 
 The PySc2InstallPackage contains an install script (InstallPySc2.cmd), execute this script and follow the inscrutions.  
-The script will: 
+The script will:
  - Install Python
  - Install PySc2
  - Install Starcraft2
@@ -13,7 +13,28 @@ C:%homepath%\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\pysc2
 
 When you did this you can check if everything is installed successfully by running StartPySc2.cmd.  
 
+## Installation on Linux
 
+On Linux, you need Python, PySc2 and Starcraft2.
+
+- Python can be installed with your favorite package manager.
+- PySc2 can be installed with the instructions of [Deepmind](https://github.com/deepmind/pysc2).
+- To install Starcraft2, you need to follow the instructions of [Blizzard](https://github.com/Blizzard/s2client-proto#downloads).
+
+After installing, run the following commands:
+
+```console
+git clone https://github.com/AltenStarcraft/AltenStarcraft
+cd AltenStarcraft
+mkdir ~/StarCraftII/Maps/mini_games
+cp ./Maps/MoveToBeacon.SC2Map ~/StarCraftII/Maps/mini_games/
+```
+
+This should set up your installation. After this, run the following command from `AltenStarcraft`:
+
+```console
+python -m pysc2.bin.agent --map MoveToBeacon --agent Agents.PySc2Agent.MoveToBeaconAgent
+```
 
 ## Creating your own agent
 
@@ -46,4 +67,3 @@ We are also thinking of creating some kind of competition.
 
 ## More info on PySc2
 https://github.com/deepmind/pysc2
-
